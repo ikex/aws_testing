@@ -7,11 +7,11 @@ phases:
   pre_build:
     commands:
       - echo Pre-build phase started on `date`
-      - gradlew -v
+      - java -version
   build:
     commands:
       - echo Build phase started on `date`
-      - ./gradlew clean
+      - java -version
   post_build:
     commands:
       - echo Build completed on `date`
