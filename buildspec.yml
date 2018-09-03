@@ -7,12 +7,12 @@ phases:
   pre_build:
     commands:
       - echo Pre-build phase started on `date`
-      - type apkanalyzer
-      - apkanalyzer --help
+      - type sdkmanager
+      - sdkmanager --list
   build:
     commands:
       - echo Build phase started on `date`
-      - java -version
+      - sdkmanager --update
   post_build:
     commands:
       - echo Build completed on `date`
