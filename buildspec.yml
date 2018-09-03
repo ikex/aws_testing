@@ -7,7 +7,8 @@ phases:
   pre_build:
     commands:
       - echo Pre-build phase started on `date`
-      - java -version
+      - type apkanalyzer
+      - apkanalyzer --help
   build:
     commands:
       - echo Build phase started on `date`
